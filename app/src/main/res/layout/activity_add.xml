@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".addActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+
+                android:background="@color/white"
+                app:title="uzair khan poetry APP"
+                app:titleTextColor="@android:color/black">
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <EditText
+
+                android:id="@+id/etpoetName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+
+                android:background="@drawable/et_add_activity"
+                android:inputType="textMultiLine"
+                android:padding="20dp"
+              android:hint="Dr. Uzair Khan"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etpoetry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:background="@drawable/et_add_activity"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:padding="20dp"
+
+                android:hint="Khudaya awal o akir bhi tu
+                \nKhudya zahir o batin bhi tu"
+                android:textSize="18sp"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submit"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical|center"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textSize="21sp">
+
+            </androidx.appcompat.widget.AppCompatButton>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

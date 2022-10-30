@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/lightgrey"
+    android:layout_margin="5dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Ghalib uncle"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/tvPoetName"
+        android:paddingLeft="5dp"
+        android:gravity="center_vertical">
+
+    </TextView>
+      <TextView
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+          android:minHeight="50dp"
+        android:text="mein ne mana kuch nhi ghalib
+        \nmuft hath aye toh bura kiya hai"
+        android:id="@+id/tvPoetry"
+          android:paddingLeft="5dp"
+          android:textSize="21sp"
+          android:gravity="center_vertical"
+          android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/date_time"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center_vertical|right"
+        android:padding="5dp"
+        android:text="12-aug-2022"
+        android:textSize="12sp"
+        android:textStyle="bold">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:backgroundTint="#4CAF50"
+            android:id="@+id/updateButton"
+            android:layout_weight="1"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+
+
+            android:gravity="center_vertical|center">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:backgroundTint="#E91E63"
+            android:id="@+id/deleteButton"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
